@@ -1,0 +1,28 @@
+\begin{enumerate}
+    \item This protein has 3 possible open conformations and 1 possible closed conformation. At temperature $T$:\\
+   \begin{enumerate}
+       \item The energetic weight for the open conformation is $e^{-\frac{\varepsilon}{k_{b}T}}$. Since there are 3 open conformations with the same energetic weight, these 3 conformations can be summed up into a total open weight, $3e^{-\frac{\varepsilon}{k_{b}T}}$
+       \item The energetic weight for the closed conformation is $
+           e^{-\frac{0}{k_{b}T}} = 1.$
+           Since there is only one closed conformation, the total closed weight is 1.
+       \item The partition function is the sum of the two total weights, \begin{equation*}
+          Z=1+3e^{-\frac{\varepsilon}{k_{b}T}}
+       \end{equation*}
+   \end{enumerate} 
+   Therefore, the probability $p_{o}$ of finding the protein in an open conformation is:
+   \begin{equation*}
+       p_{0}=\frac{3e^{-\frac{\varepsilon}{k_{b}T}}}{1+3e^{-\frac{\varepsilon}{k_{b}T}}}=\frac{3e^{-\frac{\varepsilon}{k_{b}T}}}{Z}
+   \end{equation*}
+   The probability $p_{c}$ of finding the protein in a closed conformation is:
+   \begin{equation*}
+       p_{c}=\frac{1}{1+3e^{-\frac{\varepsilon}{k_{b}T}}}=\frac{1}{Z}
+   \end{equation*}
+   \item The behaviour of $p_{c}$ at very low and very high temperatures can be examined using limits:
+      \begin{align*}
+       \lim_{T\to\infty} p_{c}=\frac{1}{4}\\
+       \lim_{T\to0} p_{c}=1
+      \end{align*}
+      Therefore, at very high temperatures, $p_{c}$ approaches 0.25 and the protein would be equally likely in any of the 4 conformations. At very low temperatures, $p_{c}$ approaches 1 and the protein would only be found in the closed state.
+      \item 
+      The average energy of the molecule at temperature T is: $$\langle E\rangle=\sum_{i}\varepsilon_{i}p_{i}=\varepsilon p_{o}+0p_{c}=\frac{3\varepsilon e^{-\frac{\varepsilon}{k_{b}T}}}{1+3e^{-\frac{\varepsilon}{k_{b}T}}}=\frac{3\varepsilon e^{-\frac{\varepsilon}{k_{b}T}}}{Z}$$
+\end{enumerate}

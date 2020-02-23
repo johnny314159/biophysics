@@ -1,0 +1,59 @@
+\begin{enumerate}[(i)]
+    \item
+Before ligand binding:
+\hspace{4.05cm}
+After ligand binding:\\
+  \begin{TAB}(e,1cm,1cm){|c|c|c|c|c|}{|c|c|c|c|c|}
+O &  &  &  & O  \\
+& O &   &    &  \\
+&   & O  &   &  \\
+&   &   &  O &  \\
+O &   &   &  &  O
+\end{TAB}
+\hspace{3cm}
+\begin{TAB}(e,1cm,1cm){|c|c|c|c|c|}{|c|c|c|c|c|}
+O &  &  &  & O  \\
+& O &   &    &  \\
+&   &   &   &  \\
+&   &   &  O &  \\
+O &   &   &  &  O   
+\end{TAB}\\
+Entropy: S = $k_{b}\ln W, k_{b} = 1.381\times10^{-23} J/K$.\\Let subscript 0 represent before ligand binding and subscript 1 represent after ligand binding. 
+\begin{align*}
+    W&=\frac{\Omega!}{L!(\Omega!-L!)}\\
+    W_{0}&=\frac{25!}{7!18!}=480,700\\
+    W_{1}&=\frac{25!}{6!19!}=177,100\\
+    S_{0}&=k_{b}\ln{480700}=13.08k_{b}=1.806\times10^{-22} J/K\\
+    S_{1}&=k_{b}\ln177100=12.08k_{b}=1.668\times10^{-22} J/K
+\end{align*}
+    \item 
+         $ \Delta S=S_{1}-S_{0}$.
+    Using the S values from part (i),
+    \begin{align*}
+        \Delta S =& (12.08-13.08)\times k_{b}\\
+        \Delta S\approx &k_{b}=1.381\times10^{-23} J/K
+    \end{align*}
+    \item
+    From part (ii), the entropy change is negative which is \textbf{unfavourable}. However, ligand binding could still be spontaneous if the entropic loss could be balanced by lower binding energy.
+    \item
+    %What would the difference between the solution and ligand binding energies have to be a multiple of kbT to exactly counter (match) this entropy change? Use the partition function weights for the two cases to solve this.
+       Let $\varepsilon_{sol},\varepsilon_{b}$ be the energies of solution and ligand binding, respectively. There are L = 7 ligands available to bind. The partition function weights are:
+   \begin{align*}
+     \text{Before ligand binding case}: &W_{0}e^{-\frac{L\varepsilon_{sol}}{k_{b}T}} = 480700e^{-\frac{7\varepsilon_{sol}}{k_{b}T}}\\
+     \text{After ligand binding case}: &W_{1}e^{-\frac{(L-1)\varepsilon_{sol}+\varepsilon_{b}}{k_{b}T}} = 177100e^{-\frac{6\varepsilon_{sol}+\varepsilon{b}}{k_{b}T}}
+   \end{align*}
+   Equating the weights and isolating for $\varepsilon_{sol}-\varepsilon_{b},$
+   \begin{align*}
+       W_{0}e^{-\frac{7\varepsilon_{sol}}{k_{b}T}}=&W_{1}e^{-\frac{6\varepsilon_{sol}+\varepsilon_{b}}{k_{b}T}}\\
+       \frac{W_{0}}{W_{1}}=&e^{-\frac{(6\varepsilon_{sol}+\varepsilon{b})}{k_{b}T}-(-\frac{7\varepsilon_{sol}}{k_{b}T})}\\
+       \frac{W_{0}}{W_{1}}=&e^{\frac{\varepsilon_{sol}-\varepsilon_{b}}{k_{b}T}}\\
+       \varepsilon_{sol}-\varepsilon_{b}=&k_{b}T\ln{\frac{W_{0}}{W_{1}}}\\
+       \varepsilon_{sol}-\varepsilon_{b}=&k_{b}T\ln{\frac{480700}{177100}}\\
+       \varepsilon_{sol}-\varepsilon_{b}=&k_{b}T
+   \end{align*}
+     Therefore, ligand binding energy needs to be $1k_{b}T$ less than solution energy to counter the entropic loss.
+
+ 
+\end{enumerate}
+ 
+ 
